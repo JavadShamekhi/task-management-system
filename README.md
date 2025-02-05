@@ -41,25 +41,26 @@ A **Task Management System** built with **Java Spring Boot** and **MySQL**, desi
    cd task-management-system
 
 2. **Configure the Database**: Update application.properties with your database credentials:
-spring.datasource.url=jdbc:mysql://localhost:3306/task_management
-spring.datasource.username=your-username
-spring.datasource.password=your-password
+   ```bash
+    spring.datasource.url=jdbc:mysql://localhost:3306/task_management
+    spring.datasource.username=your-username
+    spring.datasource.password=your-password
 
-# Turn off the Spring Boot banner
-spring.main.banner-mode=off
+    # Turn off the Spring Boot banner
+    spring.main.banner-mode=off
 
-# Reduce logging level. Set logging level to warn
-logging.level.root=warn
+    # Reduce logging level. Set logging level to warn
+    logging.level.root=warn
 
-# Show JPA/Hibernate logging messages
-logging.level.org.hibernate.SQL=trace
-logging.level.org.hibernate.orm.jdbc.bind=trace
+    # Show JPA/Hibernate logging messages
+    logging.level.org.hibernate.SQL=trace
+    logging.level.org.hibernate.orm.jdbc.bind=trace
 
-# Changing spring security settings
-spring.security.user.name=admin
-spring.security.user.password=12345 
+    # Changing spring security settings
+    spring.security.user.name=admin
+    spring.security.user.password=12345 
 
-3. **Run the Project**
+3. **Run the Project**:
 mvn spring-boot:Run
 
 4. **Access the API**:
